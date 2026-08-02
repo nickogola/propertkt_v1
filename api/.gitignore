@@ -1,0 +1,8 @@
+## .NET build artifacts
+bin/
+obj/
+
+## User-specific / secrets
+*.user
+appsettings.*.local.json
+secrets.json

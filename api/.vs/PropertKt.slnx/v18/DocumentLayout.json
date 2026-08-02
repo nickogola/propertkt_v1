@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ogola\\claude-property-mgt\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\notifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\notifycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\tenantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\tenantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\contractorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\contractorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\controllers\\apicontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\controllers\\apicontrollerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\propertkt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\propertkt.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|c:\\users\\ogola\\claude-property-mgt\\api\\propertkt.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE60C043-672D-7898-54F0-2BEED2DA2AD7}|PropertKt.Api\\PropertKt.Api.csproj|solutionrelative:propertkt.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiControllerBase.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\ApiControllerBase.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\ApiControllerBase.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\ApiControllerBase.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\ApiControllerBase.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T13:21:01.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T04:34:44.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TenantsController.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\TenantsController.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\TenantsController.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\TenantsController.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\TenantsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T04:27:27.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContractorsController.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\ContractorsController.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\ContractorsController.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\ContractorsController.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\ContractorsController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T03:39:33.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotifyController.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\NotifyController.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\NotifyController.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\NotifyController.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\NotifyController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T04:56:38.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "PropertKt.Api\\Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-01T13:25:48.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PropertKt.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\PropertKt.Api.csproj",
+              "RelativeDocumentMoniker": "PropertKt.Api\\PropertKt.Api.csproj",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\PropertKt.Api.csproj",
+              "RelativeToolTip": "PropertKt.Api\\PropertKt.Api.csproj",
+              "ViewState": "AgIAAAsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-26T05:18:25.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "PropertKt.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\appsettings.json",
+              "RelativeToolTip": "PropertKt.Api\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-26T23:59:43.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Program.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Program.cs",
+              "RelativeToolTip": "PropertKt.Api\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAIwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T05:18:28.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Entities.cs",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Models\\Entities.cs",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Models\\Entities.cs",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Models\\Entities.cs",
+              "RelativeToolTip": "PropertKt.Api\\Models\\Entities.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T03:41:08.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PropertKt.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ogola\\claude-property-mgt\\api\\PropertKt.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PropertKt.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABEAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-26T05:21:12.05Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

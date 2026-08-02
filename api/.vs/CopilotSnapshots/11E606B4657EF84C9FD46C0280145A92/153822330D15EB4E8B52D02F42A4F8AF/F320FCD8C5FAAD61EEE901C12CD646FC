@@ -1,0 +1,71 @@
+﻿using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using PropertKt.Api.Data;
+using PropertKt.Api.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// ----- JWT options -----
+var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtOptions>() ?? new JwtOptions();
+if (string.IsNullOrWhiteSpace(jwtOptions.Secret) || jwtOptions.Secret.Length < 32)
+    throw new InvalidOperationException("Jwt:Secret must be set and at least 32 characters. See appsettings.json.");
+builder.Services.AddSingleton(jwtOptions);
+builder.Services.AddSingleton<JwtTokenService>();
+
+// ----- Data access -----
+builder.Services.AddSingleton<SqlConnectionFactory>();
+builder.Services.AddScoped<TenantRepository>();
+builder.Services.AddScoped<ContractorRepository>();
+builder.Services.AddScoped<TicketRepository>();
+builder.Services.AddScoped<NotificationRepository>();
+
+// ----- Messaging -----
+builder.Services.AddScoped<IMessagingService, MessagingService>();
+
+// ----- Auth -----
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtOptions.Issuer,
+            ValidAudience = jwtOptions.Audience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Secret)),
+        };
+        // Accept the token from the httpOnly cookie as well as the Authorization header.
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = ctx =>
+            {
+                if (string.IsNullOrEmpty(ctx.Token) && ctx.Request.Cookies.TryGetValue("pm_session", out var cookie))
+                    ctx.Token = cookie;
+                return Task.CompletedTask;
+            }
+        };
+    });
+builder.Services.AddAuthorization();
+
+// ----- CORS (allow the Next.js frontend to call with credentials) -----
+const string CorsPolicy = "frontend";
+builder.Services.AddCors(o => o.AddPolicy(CorsPolicy, p => p
+    .WithOrigins(builder.Configuration.GetSection("Cors:Origins").Get<string[]>() ?? ["http://localhost:3000"])
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials()));
+
+builder.Services.AddControllers();
+
+var app = builder.Build();
+
+app.UseHttpsRedirection();
+app.UseCors(CorsPolicy);
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
+
+app.Run();

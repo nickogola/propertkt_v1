@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Tenant {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  phone        String?
+  unit         String
+  notes        String?
+  passwordHash String?  // scrypt: <saltHex>:<keyHex>; null until admin sets one
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  tickets      Ticket[]
+}
+
+model Contractor {
+  id           String   @id @default(cuid())
+  name         String
+  company      String?
+  email        String   @unique
+  phone        String?
+  trades       String   @default("[]") // JSON array of categories, e.g. ["Plumbing","HVAC"]
+  passwordHash String   // scrypt: <saltHex>:<keyHex>; set at signup
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  tickets      Ticket[]
+  offers       TicketOffer[]
+}
+
+model Ticket {
+  id          String   @id @default(cuid())
+  tenantId    String
+  tenant      Tenant   @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  category    String   // e.g. "Plumbing", "Appliance", "HVAC", "Electrical", "Other"
+  title       String
+  description String
+  urgency     String   @default("normal") // "low" | "normal" | "high" | "emergency"
+  status      String   @default("open")   // "open" | "in_progress" | "resolved" | "closed"
+  adminNotes  String?
+  // Tenant's preferred visit time: "asap" (as soon as possible) or "scheduled"
+  preferredTiming String   @default("asap")
+  preferredAt     DateTime? // chosen date/time when preferredTiming is "scheduled"
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // ----- Contractor assignment -----
+  contractorId          String?
+  contractor            Contractor? @relation(fields: [contractorId], references: [id], onDelete: SetNull)
+  // "unassigned" | "offered" | "accepted" | "en_route" | "on_site" | "completed"
+  assignmentStatus      String      @default("unassigned")
+  etaAt                 DateTime?   // contractor's estimated arrival time
+  estimatedDurationMins Int?        // how long the job is expected to take
+  assignedAt            DateTime?   // when a contractor accepted the job
+  contractorNotes       String?     // notes the contractor shares with the tenant
+
+  offers      TicketOffer[]
+}
+
+// A job offer sent to a contractor. Many contractors may be offered a ticket,
+// but only one can accept it (enforced atomically at accept time).
+model TicketOffer {
+  id           String   @id @default(cuid())
+  ticketId     String
+  ticket       Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  contractorId String
+  contractor   Contractor @relation(fields: [contractorId], references: [id], onDelete: Cascade)
+  status       String   @default("open") // "open" | "declined"
+  createdAt    DateTime @default(now())
+
+  @@unique([ticketId, contractorId])
+  @@index([contractorId])
+}
+
+model MagicLink {
+  id        String   @id @default(cuid())
+  email     String
+  tokenHash String   @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model Notification {
+  id         String   @id @default(cuid())
+  subject    String
+  body       String
+  recipients String   // JSON array of tenant IDs or "all"
+  channels   String   @default("[\"email\"]") // JSON array: "email" | "whatsapp"
+  sentCount  Int      @default(0)
+  sentAt     DateTime @default(now())
+}
